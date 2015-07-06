@@ -26,5 +26,9 @@ public class Arm extends Subsystem {
 	@Override
 	protected void initDefaultCommand() {		
 	}
+
+	public void stop() {
+		motor.set(0);
+	}
 }
 
